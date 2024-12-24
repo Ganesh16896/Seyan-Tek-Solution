@@ -19,3 +19,43 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+p {
+  word-spacing: 5px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333333;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #111111; /* Slightly darker for emphasis */
+}
+
+/* Subheadings */
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: #222222;
+}
+
+/* Links */
+a {
+  color: #007bff; /* Accent blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Captions or Secondary Text */
+p.caption {
+  font-size: 14px;
+  font-weight: 300; /* Lighter weight */
+  color: #666666; /* Lighter gray */
+}
