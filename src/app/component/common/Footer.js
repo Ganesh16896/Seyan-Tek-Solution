@@ -3,20 +3,12 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
 import { MdEmail, MdPhone } from "react-icons/md"; // React Icons for Email and Phone
-import { useForm } from "@formspree/react";
 
 const Footer = () => {
-  const [state, submit, reset] = useForm("xjkkrdzy");
-
-  if (state.succeeded) {
-    alert("Successfull submit ");
-    window.location.reload();
-  }
-
   return (
     <div className="py-5 scroll-mt-[0px] duration-300" id="contact">
       <div className="flex flex-col md:flex-row gap-10 justify-between items-center p-3 md:p-10 mt-10 border-2 border-white">
-        <div className="flex flex-col items-center md:items-start space-y-4 md:w-1/3">
+        <div className="flex flex-col items-center md:items-start space-y-4 md:w-1/3 mt-10 sm:mt-0">
           <div className="relative ">
             <Image
               src="/image/sey_logo.jpeg"
@@ -48,7 +40,7 @@ const Footer = () => {
         {/* Right Form Section */}
         <div className="bg-gray-700 w-full md:w-2/3 p-3 sm:p-6 rounded-lg">
           <form
-            onSubmit={submit}
+            // onSubmit={submit}
             className="grid grid-cols-1 md:grid-cols-2 gap-4 "
           >
             {/* Name Field */}
