@@ -33,7 +33,9 @@ const OurClient = () => {
           {list.map((res) => (
             <>
               <div className="border-2  text-center hover:shadow-slate-200 hover:shadow-xl border-gray-500 p-6 rounded-md shadow-sm hover:scale-10 shadow-gray-300 transition duration-300">
-                <h3 className="text-2xl font-bold">{res.title}</h3>
+                <h3 className="text-2xl font-bold">
+                  {res.title} {""}
+                </h3>
                 <p className="text-4xl font-bold mt-3 text-[#38bdf8]">
                   {res.count}
                 </p>
