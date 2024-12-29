@@ -4,9 +4,9 @@ import React from "react";
 const Banner = () => {
   return (
     <div>
-      <div className="relative w-full h-[250px] sm:h-[400px]">
+      <div className="relative w-full h-[250px] sm:h-[500px]">
         <Image
-          src="/image/homeimg/banner.png"
+          src="/image/homeimg/banners.png"
           fill
           className="object-cover w-[100%]"
           alt="banner"

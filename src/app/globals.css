@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #111827;
+  --foreground: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,7 @@ p {
   word-spacing: 5px;
   font-size: 16px;
   line-height: 1.8;
-  color: #333333;
+  color: #fff;
 }
 
 /* Headings */
@@ -32,7 +32,7 @@ h1,
 h2,
 h3 {
   font-weight: 700;
-  color: #111111; /* Slightly darker for emphasis */
+  color: #fff; /* Slightly darker for emphasis */
 }
 
 /* Subheadings */
@@ -40,13 +40,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  color: #222222;
-}
-
-/* Links */
-a {
-  color: #007bff; /* Accent blue */
-  text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
@@ -57,5 +51,5 @@ a:hover {
 p.caption {
   font-size: 14px;
   font-weight: 300; /* Lighter weight */
-  color: #666666; /* Lighter gray */
+  color: #fff; /* Lighter gray */
 }
