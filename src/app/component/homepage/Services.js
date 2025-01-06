@@ -121,12 +121,10 @@ const Services = () => {
           {Services.map((res, id) => (
             <div
               key={res.id}
-              className="border-2  duration-300 p-4 sm:p-6  shadow-md hover:shadow-2xl shadow-slate-200    hover:shadow-gray-100 bg-[#111827] rounded-lg"
+              className="border-2  duration-300 p-4 sm:p-6  shadow-md hover:shadow-2xl shadow-slate-200    hover:shadow-gray-900 bg-[#fff] rounded-lg"
             >
               <h3 className="text-xl font-bold ">{res.title}</h3>
-              <p className="pt-3 opacity-25 hover:opacity-100">
-                {res.discription}
-              </p>
+              <p className="pt-3">{res.discription}</p>
             </div>
           ))}
         </div>

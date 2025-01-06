@@ -30,9 +30,9 @@ const OurClient = () => {
       </h2>
       <div className="mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
-          {list.map((res) => (
-            <>
-              <div className="border-2  text-center hover:shadow-slate-200 hover:shadow-xl border-gray-500 p-6 rounded-md shadow-sm hover:scale-10 shadow-gray-300 transition duration-300">
+          {list.map((res, id) => (
+            <div key={id}>
+              <div className="border-2  text-center hover:shadow-gray-900 hover:shadow-xl border-gray-500 p-6 rounded-md shadow-sm hover:scale-10 shadow-gray-300 transition duration-300">
                 <h3 className="text-2xl font-bold">
                   {res.title} {""}
                 </h3>
@@ -40,7 +40,7 @@ const OurClient = () => {
                   {res.count}
                 </p>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
