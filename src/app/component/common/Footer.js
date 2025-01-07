@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center space-x-3 ">
-            <MdPhone className="text-green-600 text-4xl" />
+            <IoLogoWhatsapp className="text-green-600 text-4xl" />
             <div>
               <h4 className="font-bold text-lg">WhatsApp No.</h4>
               <a

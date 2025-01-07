@@ -99,19 +99,23 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10" id="server">
-        <h2 className="text-2xl font-bold  ">Our Services</h2>
-        <p className="mt-3">
-          Understanding traffic patterns is essential for better planning,
-          improved safety, and efficient infrastructure management. As the
-          transport industry evolves, traffic congestion continues to grow in
-          multiple ways. We offer a range of traffic survey services designed to
-          meet the increasing demand and support efficient traffic management.
-          Our service provides precise insights into vehicle volumes, traffic
-          congestion, and peak-hour trends, as well as comprehensive, reliable,
-          and real-time data to help you make informed decisions.
-        </p>
+      <div id="server" className="scroll-mt-[70px]">
+        <div className="mt-10">
+          <h2 className="text-2xl font-bold  ">Our Services</h2>
+          <p className="mt-3">
+            Understanding traffic patterns is essential for better planning,
+            improved safety, and efficient infrastructure management. As the
+            transport industry evolves, traffic congestion continues to grow in
+            multiple ways. We offer a range of traffic survey services designed
+            to meet the increasing demand and support efficient traffic
+            management. Our service provides precise insights into vehicle
+            volumes, traffic congestion, and peak-hour trends, as well as
+            comprehensive, reliable, and real-time data to help you make
+            informed decisions.
+          </p>
+        </div>
       </div>
+
       <div className="mt-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {Services.map((res, id) => (
