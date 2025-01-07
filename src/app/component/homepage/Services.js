@@ -73,13 +73,11 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="pt-[65px] w-full">
+    <div className="pt-[65px] w-full  ">
       <div className="py-5 scroll-mt-[70px] duration-300" id="about">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
           <div>
-            <h2 className="text-2xl font-bold  border-b-[3px] border-orange-600 w-[150px]">
-              About Us
-            </h2>
+            <h2 className="text-2xl font-bold  ">About Us</h2>
             <p className="mt-3">
               At Seyantek solutions, we provide global traffic survey services,
               offering precise, lane-by-lane tracking and vehicle classification
@@ -92,7 +90,7 @@ const Services = () => {
           </div>
           <div className="relative w-full h-[250px] sm:h-[250px]">
             <Image
-              src="/image/homeimg/abouttraff.png"
+              src="/image/homeimg/abouttraff1.jpg"
               fill
               className="object-cover w-full rounded-md"
               alt="banner"
@@ -101,10 +99,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10">
-        <h2 className="text-2xl font-bold  border-b-[3px] border-orange-600 w-[180px]">
-          Our Services
-        </h2>
+      <div className="mt-10" id="server">
+        <h2 className="text-2xl font-bold  ">Our Services</h2>
         <p className="mt-3">
           Understanding traffic patterns is essential for better planning,
           improved safety, and efficient infrastructure management. As the
@@ -121,7 +117,7 @@ const Services = () => {
           {Services.map((res, id) => (
             <div
               key={res.id}
-              className="border-2  duration-300 p-4 sm:p-6  shadow-md hover:shadow-2xl shadow-slate-200    hover:shadow-gray-900 bg-[#fff] rounded-lg"
+              className="border-2  duration-300 p-4 sm:p-6  shadow-md hover:shadow-2xl shadow-slate-200    hover:shadow-blue-400 bg-[#fff] rounded-lg"
             >
               <h3 className="text-xl font-bold ">{res.title}</h3>
               <p className="pt-3">{res.discription}</p>

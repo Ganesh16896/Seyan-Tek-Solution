@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div>
       <Layout>
-        <div className="pt-[65px] w-full">
+        <div className="pt-[62px] w-full">
           <Banner />
           <div className="px-3 md:px-10">
             {/* <OurServers /> */}

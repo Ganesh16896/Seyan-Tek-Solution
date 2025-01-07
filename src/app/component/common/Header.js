@@ -42,12 +42,13 @@ function Header() {
 
   return (
     <div className="top-0 fixed w-[100%] z-10">
-      <div className="flex justify-between items-center bg-slate-100 py-2 px-3 md:px-10 text-black">
-        <div className="relative w-[50px] h-[50px]">
+      <div className="flex justify-between items-center bg-slate-100 py-2 px-0 md:px-10 text-black">
+        <div className="relative">
           <Image
-            src="/image/logo.svg"
-            fill
-            className="object-contain "
+            src="/image/logo1.svg"
+            width={300}
+            height={250}
+            className="object-contain"
             alt="banner"
             priority
           />
@@ -60,7 +61,7 @@ function Header() {
               <li key={res.id}>
                 <Link
                   href={res.link}
-                  className="flex items-center text-black hover:border-b-2 hover:text-[#000] hover:border-gray-900 gap-1 cursor-pointer"
+                  className="flex items-center font-bold text-black hover:border-b-2 hover:text-[#000] hover:border-gray-900 gap-1 cursor-pointer"
                   onClick={() => handleLinkClick(res.name)}
                 >
                   {res.name}
@@ -78,7 +79,7 @@ function Header() {
           {menu && (
             <div
               ref={menuRef}
-              className="absolute w-[280px] top-0 right-0 z-10 bg-slate-800"
+              className="absolute w-[280px] top-0 right-0 z-10 bg-slate-100"
             >
               <div className="py-[18px] px-3 flex justify-between items-center border-b-2">
                 <p className="text-lg">Menu</p>
@@ -91,7 +92,7 @@ function Header() {
                   <li key={res.id} className="relative px-3">
                     <Link
                       href={res.link}
-                      className="flex items-center gap-1 cursor-pointer text-[#000]"
+                      className="flex items-center gap-1 font-bold cursor-pointer text-[#000]"
                       onClick={() => handleLinkClick(res.name)}
                     >
                       {res.name}

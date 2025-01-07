@@ -28,10 +28,13 @@ const Footer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const serviceID = "service_jte8txq";
-    const templateID = "template_iyxjeoo";
-    const publickey = "i4qkUeelf1sQHaWGf";
+    // const serviceID = "service_jte8txq";
+    // const templateID = "template_iyxjeoo";
+    // const publickey = "i4qkUeelf1sQHaWGf";
 
+    const serviceID = "service_gndldkm";
+    const templateID = "template_3fee2x8";
+    const publickey = "OAZQQt5awY2cyLAI7";
     try {
       const emailParams = {
         to_name: "Recipient Name", // Replace with dynamic recipient name if needed
@@ -69,15 +72,15 @@ const Footer = () => {
         <div className="flex flex-col items-center  md:items-start space-y-4 md:w-1/3 mt-10 sm:mt-0">
           <div className="relative">
             <Image
-              src="/image/flogo.svg"
-              width={350}
-              height={350}
+              src="/image/logo1.svg"
+              width={300}
+              height={250}
               className="object-contain"
               alt="banner"
               priority
             />
           </div>
-          <div className="flex items-center space-x-3 ml-0 sm:ml-4">
+          <div className="flex items-center space-x-3 ">
             <MdEmail className="text-blue-500 text-4xl" />
             <div>
               <h4 className="font-bold text-lg">Contact Us</h4>
@@ -89,7 +92,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center space-x-3 ml-0 sm:ml-4">
+          <div className="flex items-center space-x-3 ">
             <MdPhone className="text-green-500 text-4xl" />
             <div>
               <h4 className="font-bold text-lg">Phone No.</h4>
@@ -101,7 +104,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center space-x-3 ml-0 sm:ml-4">
+          <div className="flex items-center space-x-3 ">
             <MdPhone className="text-green-600 text-4xl" />
             <div>
               <h4 className="font-bold text-lg">WhatsApp No.</h4>
@@ -123,7 +126,10 @@ const Footer = () => {
             className="grid grid-cols-1 text-black md:grid-cols-2 gap-4"
           >
             <div>
-              <label htmlFor="name" className="block text-sm font-bold">
+              <label
+                htmlFor="name"
+                className="block text-white text-sm font-bold"
+              >
                 Your Name*
               </label>
               <input
@@ -138,14 +144,17 @@ const Footer = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-bold">
+              <label
+                htmlFor="email"
+                className="block text-sm text-white font-bold"
+              >
                 E-mail Address*
               </label>
               <input
                 id="email"
                 name="email"
                 type="email"
-                className="w-full p-2 mt-1 border rounded-md"
+                className="w-full p-2 text-white mt-1 border rounded-md"
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
@@ -153,7 +162,10 @@ const Footer = () => {
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-bold">
+              <label
+                htmlFor="phone"
+                className="block text-white text-sm font-bold"
+              >
                 Phone Number*
               </label>
               <input
@@ -168,7 +180,10 @@ const Footer = () => {
               />
             </div>
             <div>
-              <label htmlFor="subject" className="block text-sm font-bold">
+              <label
+                htmlFor="subject"
+                className="block text-white text-sm font-bold"
+              >
                 Subject*
               </label>
               <input
@@ -183,7 +198,10 @@ const Footer = () => {
               />
             </div>
             <div className="col-span-1 md:col-span-2">
-              <label htmlFor="message" className="block text-sm font-bold">
+              <label
+                htmlFor="message"
+                className="block  text-white text-sm font-bold"
+              >
                 Message*
               </label>
               <textarea

@@ -6,7 +6,7 @@ const Banner = () => {
     <div>
       <div className="relative w-full h-[250px] sm:h-[500px]">
         <Image
-          src="/image/homeimg/banners.png"
+          src="/image/homeimg/bannar1.jpg"
           fill
           className="object-cover w-[100%]"
           alt="banner"
